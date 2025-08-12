@@ -19,7 +19,7 @@ export default class Error extends Component {
             <p>The requested page is unavailable at the moment!</p>
             <Link
               className="main-button"
-              to="/home"
+              to="/inicio"
               style={{
                 color: theme.body,
                 backgroundColor: theme.text,
@@ -27,7 +27,7 @@ export default class Error extends Component {
                 display: "inline-flex",
               }}
             >
-              Go Home
+              voltar para o inicio
             </Link>
           </Fade>
         </div>

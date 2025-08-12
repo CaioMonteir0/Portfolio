@@ -18,7 +18,7 @@ const onMouseOut = (event) => {
 class Header extends Component {
   render() {
     const theme = this.props.theme;
-    const link = settings.isSplash ? "/splash" : "home";
+    const link = settings.isSplash ? "/splash" : "inicio";
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
@@ -38,74 +38,50 @@ class Header extends Component {
             <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li>
                 <NavLink
-                  to="/home"
+                  to="/inicio"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Home
+                  Início
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/education"
+                  to="/educacao"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Education
+                  Educação
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/experience"
+                  to="/experiencia"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Experience
+                  Experiência
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/projects"
+                  to="/projetos"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Projects
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Contact Me
+                  Projetos
                 </NavLink>
               </li>
             </ul>
