@@ -12,7 +12,7 @@ import Error404 from "../pages/errors/error404/Error";
 export default class Main extends Component {
   render() {
     return (
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter basename="/">
         <Switch>
           <Route
             path="/"
@@ -24,6 +24,10 @@ export default class Main extends Component {
                 <Home {...props} theme={this.props.theme} />
               )
             }
+          />
+          <Route
+            path="/Portfolio"
+            render={(props) => <Home {...props} theme={this.props.theme} />}
           />
           <Route
             path="/inicio"
