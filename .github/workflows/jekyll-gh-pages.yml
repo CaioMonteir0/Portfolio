@@ -31,7 +31,8 @@ jobs:
 
       - name: Build React app
         run: npm run build
-
+        env:
+          CI: false
       - name: Upload production-ready files
         uses: actions/upload-pages-artifact@v3
         with:
